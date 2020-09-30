@@ -10,31 +10,40 @@
 <body>
   <!--Nama , Tgl Lahir, Alamat, Kota, Pekerjaan, Jenis Kelamin, Hobby-->
   <form>
-    <H1>Free Registration </H1>
+    <H1>
+      <p align="center">
+        <font color="purple">Free Registration</font><br />
+    </H1>
     <pre>
-      Nama          : <input type="text" size="11" name="nama">
 
-      Tgl Lahir     : <input type="text" size="4" name="tanggal"> / <input type="text" size="4" name="bulan"> / <input type="text" size="6" name="tahun">
+      <font face="Times New Roman">
+      Nama              : <input type="text" size="11" name="nama">
 
-      Alamat        : <input type="text" size="50" maxlength="100" name="alamat">
+      Tgl Lahir         : <input type="text" size="4" name="tanggal"> / <input type="text" size="4" name="bulan"> / <input type="text" size="6" name="tahun">
 
-      Kota          : <input type="text" size="11" name="kota">
+      Alamat            : <textarea name="alamat" rows="5" cols="30"></textarea>
 
-      Pekerjaan     : <select name=pekerjaan>
-        <option value="Islam">Petani</option>
-        <option value="Katholik">Guru</option>
-        <option value="Kristen">Dokter</option>
-        <option value="Hindu">Pilot</option>
-        <option value="Budha">Masinis</option>
+      Kota                : <input type="text" size="11" name="kota">
+
+      Pekerjaan        : <select name=pekerjaan>
+        <option value="petani">Petani</option>
+        <option value="guru">Guru</option>
+        <option value="dokter">Dokter</option>
+        <option value="pilot">Pilot</option>
+        <option value="masinis">Masinis</option>
       </select> 
 
-      Jenis Kelamin : <input type="radio" name="jkel" value="Laki-laki">Laki-laki <input type="radio" name="jkel" value="Perempuan">Perempuan
+      Jenis Kelamin :<input type="radio" name="jkel" value="Laki-laki">Laki-laki <input type="radio" name="jkel" value="Perempuan">Perempuan
 
-      Hobby         : <input type="checkbox" name="hobby"/> Reading
-                      <input type="checkbox" name="hobby"/> Sport
-                      <input type="checkbox" name="hobby"/> Singing
-                      <input type="checkbox" name="hobby"/> Travelig
+      Hobby            :<input type="checkbox" name="hobby"/> Reading
+                              <input type="checkbox" name="hobby"/> Sport
+                              <input type="checkbox" name="hobby"/> Singing
+                              <input type="checkbox" name="hobby"/> Travelig
+                    </font>
+                 <input type="button" value="Kirim"> <input type="reset" value="Cancel">
   </pre>
+
+
   </form>
 </body>
 

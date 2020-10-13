@@ -5,9 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Membuat Kalkulator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="card text-center">
+        <div class="card-body">
+          <form name="hitung">
+            <span class="float-right" onclick="window.location.reload(true);">
+              <ion-icon name="refresh"></ion-icon>
+            </span>
+            <input class="form-control form-control-lg" type="text" name="hasil" placeholder="0" readonly>
+            <table>
+              <tr>
+                <td><input type="button" class="btn btn-light" value="7" onclick="hitung.hasil.value += '7'"></td>
+                <td><input type="button" class="btn btn-light" value="8" onclick="hitung.hasil.value += '8'"></td>
+                <td><input type="button" class="btn btn-light" value="9" onclick="hitung.hasil.value += '9'"></td>
+                <td><input type="button" class="btn btn-dark" value="/" onclick="hitung.hasil.value += ' / '"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btn btn-light" value="4" onclick="hitung.hasil.value += '4'"></td>
+                <td><input type="button" class="btn btn-light" value="5" onclick="hitung.hasil.value += '5'"></td>
+                <td><input type="button" class="btn btn-light" value="6" onclick="hitung.hasil.value += '6'"></td>
+                <td><input type="button" class="btn btn-dark" value="x" onclick="hitung.hasil.value += ' * '"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btn btn-light" value="1" onclick="hitung.hasil.value += '1'"></td>
+                <td><input type="button" class="btn btn-light" value="2" onclick="hitung.hasil.value += '2'"></td>
+                <td><input type="button" class="btn btn-light" value="3" onclick="hitung.hasil.value += '3'"></td>
+                <td><input type="button" class="btn btn-dark" value="-" onclick="hitung.hasil.value += ' - '"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btn btn-light" value="0" onclick="hitung.hasil.value += '0'"></td>
+                <td><input type="button" class="btn btn-light" value="." onclick="hitung.hasil.value += '.'"></td>
+                <td><input type="button" class="btn btn-primary" value="="
+                    onclick="hitung.hasil.value = hitung.hasil.value + ' = ' +eval(hitung.hasil.value)"></td>
+                <td><input type="button" class="btn btn-dark" value="+" onclick="hitung.hasil.value += ' + '"></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

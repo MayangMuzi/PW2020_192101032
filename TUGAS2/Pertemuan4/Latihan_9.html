@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 9</title>
+</head>
+
+<body>
+  <h1>Belajar Switch Case Kuy!</h1>
+  <h2>Mayang Muzi</h2>
+
+  <!-- id hasil -->
+  <div id="hasil"></div>
+
+
+  <script>var hari = "senin";
+
+    switch (hari) {
+      case "senin":
+        teks = "hari senin";
+        break;
+      case "selasa":
+        teks = "hari selasa";
+        break;
+      case "rabu":
+        teks = "hari rabu";
+        break;
+      default:
+        teks = "hari tidak terdeteksi";
+    }
+
+    document.getElementById("hasil").innerHTML = teks;
+  </script>
+</body>
+
+</html>

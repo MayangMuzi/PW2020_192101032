@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch</title>
+</head>
+
+<body>
+  <h1>Switch Case Di Javascript</h1>
+  <h2>Mayang Muzi</h2>
+
+  <!--id hasil-->
+  <div id="hasil"></div>
+
+  <script>
+    var warna = "merah";
+
+    switch (warna) {
+      case "hitam":
+        teks = "warna hitam";
+        break;
+      case "merah":
+        teks = "Warna merah";
+        break;
+      case "hijau":
+        teks = "Warna hijau";
+        break;
+      default:
+        teks = "Warna tidak terdeteksi";
+    }
+    document.getElementById("hasil").innerHTML = teks;
+  </script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ ion-icon {
 }
 
 .ab {
-	color: gray;
+	color: blue;
 	font-style: italic;
 }
 
@@ -20,6 +20,7 @@ ion-icon {
 .card {
 	box-shadow: 0px 10px 20px 0px #D1D1D1;
 	border-radius: 12px;
+	background-color: cadetblue;
 }
 
 .btn {

@@ -9,7 +9,21 @@
 </head>
 
 <body>
-
+  <script language="JavaScript">
+    var pesan_berjalan = "Selamat Datang di Websiteku. Selamat Membaca. Just Enjoy Yourself !!!";
+    var bmulai = 1;
+    function animasi_teks_berjalan_status_bar_model1() {
+      if (bmulai == 1) {
+        pesan_berjalan = " " + pesan_berjalan + " ";
+        window.status = pesan_berjalan;
+        bmulai = 0;
+      } else {
+        pesan_berjalan = pesan_berjalan.substring(1) + pesan_berjalan.substring(0, 1);
+        window.status = pesan_berjalan;
+      }
+      setTimeout('animasi_teks_berjalan_status_bar_model1()', 200);
+    }
+  </script>
 </body>
 
 </html>

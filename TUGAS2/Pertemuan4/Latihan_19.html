@@ -7,29 +7,17 @@
   <title>Latihan 19 Contoh Array</title>
 </head>
 
-<body onLoad="window.defaultStatus='selamat belajar java script'">
-  <script language="JavaScript" type="text/javascript">
-    function convertToCentigrade(degFahren) {
-      var degCent;
-      degCent = 5 / 9 * (degFahren - 32);
-      return degCent;
+<body>
 
-      var degFahren = new Array(212, 32, -459.15);
-      var degCent = new Array();
-      var loopCounter;
-      for (loopCounter = 0;
-        loopCounter <= 2;
-        loopCounter++) {
-        degCent[loopCounter] = convertToCentigrade(degFahren[loopCounter]);
-      } for (loopCounter = 2;
-        loopCounter >= 0;
-        loopCounter--) {
-        document.write("Value " + loopCounter + " was " + degFahren[loopCounter] + " degrees Fahrenheit");
-        document.write(" which is " + degCent[loopCounter] + " degrees centigrade<br>");
-      }
-    }
+  <script>
+    // membuat array
+    var products = ["Pulpen", "Buku Tulis", "Pensil", "Penghapus"];
 
+    // mengambil radio
+    document.write(products[3]);
   </script>
+
+</html>
 </body>
 
 </html>

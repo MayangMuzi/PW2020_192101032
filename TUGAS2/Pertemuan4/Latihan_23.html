@@ -5,24 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Latihan 23 Teks Jalan Distatus Bar</title>
-  <script language="JavaScript">
-    var pesan_berjalan = "Selamat Datang di Website Inisenjaku. Selamat Membaca. Salam Literasi !!!";
-    var bmulai = 1;
-    function animasi_teks_berjalan_status_bar_model1() {
-      if (bmulai == 1) {
-        pesan_berjalan = "            " + pesan_berjalan + "                ";
-        window.status = pesan_berjalan;
-        bmulai = 0;
-      } else {
-        pesan_berjalan = pesan_berjalan.substring(1) + pesan_berjalan.substring(0, 1);
-        window.status = pesan_berjalan;
-      }
-      setTimeout('animasi_teks_berjalan_status_bar_model1()', 200);
+  <script type='text/javascript'>
+    //<![CDATA[
+    teks = "Selamat Datang di Web A Million Dreams | Mayang Muzi"; posisi = 0;
+    function animasi_teks() {
+      document.title = teks.substring(posisi, teks.length) + teks.substring(0, posisi); posisi++;
+      if (posisi > teks.length) posisi = 0
+      window.setTimeout("animasi_teks()", 200);
     }
+    animasi_teks();
+    //]]>
   </script>
 </head>
 
 
-<body onload="setTimeout('animasi_teks_berjalan_status_bar_model1()', 200)"> </body>
+<body></body>
 
 </html>

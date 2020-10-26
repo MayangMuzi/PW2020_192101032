@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar peralatan yang dibeli</title>
+</head>
+<style TYPE="text/css">
+  body {
+    font-size: 14pt;
+  }
+
+  table {
+    font-size: 25pt;
+  }
+</style>
+
+<body>
+  <center>
+    <font face="comic sans serif" size=5 color="blue">Contoh Perhitungan dengan PHP</font>
+    <table border="1" cellspacing="0" cellpadding="3">
+
+      <tr>
+        <td colspan="4" align="center" vlagin="middle">
+          <b>Daftar Pemesanan Peralatan Kantor</b>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td><b>Nama Peralatan</b></td>
+        <td><b>Jumlah</b></td>
+        <td><b>Harga Satuan</b></td>
+        <td><b>Jumlah Harga</b></td>
+      </tr>
+
+      <?php  
+    //Mulai Untuk Mengisi Tabel Daftar Dengan Data Yang Ada
+    ?>
+      <tr>
+        <td align="left"><?php echo $brg1; ?></td>
+        <td align="right"><?php echo $jmlbrg1; ?></td>
+        <td align="right"><?php echo $harga1; ?></td>
+        <td align="right"><?php echo $th1; ?></td>
+      </tr>
+
+      <tr>
+        <td align="left"><?php echo $brg2; ?></td>
+        <td align="right"><?php echo $jmlbrg2; ?></td>
+        <td align="right"><?php echo $harga2; ?></td>
+        <td align="right"><?php echo $th2; ?></td>
+      </tr>
+
+      <tr>
+        <td align="left"><?php echo $brg3; ?></td>
+        <td align="right"><?php echo $jmlbrg3; ?></td>
+        <td align="right"><?php echo $harga3; ?></td>
+        <td align="right"><?php echo $th3; ?></td>
+      </tr>
+
+      <tr>
+        <td align="left"><?php echo $brg4; ?></td>
+        <td align="right"><?php echo $jmlbrg4; ?></td>
+        <td align="right"><?php echo $harga4; ?></td>
+        <td align="right"><?php echo $th4; ?></td>
+      </tr>
+
+      <tr>
+        <td colspan="3" align="right">Total Harga</td>
+        <td align="right"><?php echo $tharga; ?></td>
+      </tr>
+
+      <tr>
+        <td colspan="3" align="right">
+          Diskon <?php echo "( $diskon % )"; ?></td>
+        <td align="right"><?php echo $tdiskon; ?></td>
+      </tr>
+
+      <tr>
+        <td colspan="3" align="right">Jumlah harus dibayar</td>
+        <td align="right"><?php echo $tdibayar; ?></td>
+      </tr>
+
+    </table>
+  </center>
+</body>
+
+</html>

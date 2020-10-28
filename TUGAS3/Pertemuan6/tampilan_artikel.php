@@ -1,11 +1,11 @@
 <?php
 include "koneksi.php";
 $perintah = "SELECT * FROM articles ORDER BY articleID DESC";
-$hasil = mysql_db_query($dbname, $perintah);
-echo ("<h2>List Artikel </h2><br><UL> ");
+$hasil = mysqli_query($dbname, $perintah);
+echo ("<h2>List Artikel </h2><br><ul> ");
 
 while (
-  $row = mysql_fetch_array($hasil)
+  $row = mysqli_fetch_array($hasil)
 ) {
   echo ("<LI>$row[1] &nbsp;$row[2] &nbsp; 
     $row[waktu] &nbsp; <a href=\"edit_article.php?articleID=$row[0]\">Edit</a>&nbsp; 

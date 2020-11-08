@@ -1,7 +1,7 @@
 <?php
 $con = mysqli_connect("localhost", "root", "abc123");
 if (!$con) {
-  die('Could not connect: ' . mysql_error());
+  die('Could not connect: ' . mysqli_error($link));
 }
 $db_selected = mysqli_select_db("test_db", $con);
 $sql = "SELECT * from Person WHERE Lastname='Mauzi'";

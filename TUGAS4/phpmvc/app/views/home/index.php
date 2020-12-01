@@ -13,7 +13,7 @@
       <h1 class="display-4">Selamat Datang di Website Saya!</h1>
       <p class="lead">Halo semuanya, semoga harimu menyenangkan yaa, semangat!!.</p>
       <hr class="my-4">
-      <p>SEMANGAT SEMUANYA!.</p>
+      <p>Klik Disini</p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
 </body>

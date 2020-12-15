@@ -5,13 +5,14 @@ class Database
   private $user = DB_USER;
   private $pass = DB_PASS;
   private $db_name = DB_NAME;
-  private $dbh; //database handler
+  private $dbh; //database handler 
   private $stmt;
   public function __construct()
+
   {
     //data source name 
     $dsn = "mysql:host=" . $this->host . "; dbname=" . $this->db_name;
-    //option untuk mengoptimasi koneksi ke database 
+    //option utk mengoptimasi koneksi ke database
     $option = [
       PDO::ATTR_PERSISTENT => true, //menjaga koneksi tetap terjaga 
       PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
@@ -22,6 +23,7 @@ class Database
       die($e->getMessage());
     }
   }
+
   public function query($query)
   {
     $this->stmt = $this->dbh->prepare($query);
@@ -46,17 +48,16 @@ class Database
     }
     $this->stmt->bindValue($param, $value, $type);
   }
+
   public function execute()
   {
     $this->stmt->execute();
   }
-
   public function resultAll()
   {
     $this->execute();
     return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
   }
-
   public function resultSingle()
   {
     $this->execute();

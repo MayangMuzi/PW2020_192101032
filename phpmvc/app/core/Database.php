@@ -11,10 +11,10 @@ class Database
   {
     //data source name 
     $dsn = "mysql:host=" . $this->host . "; dbname=" . $this->db_name;
-
-    //option utk mengoptimasi koneksi ke database 
+    //option untuk mengoptimasi koneksi ke database 
     $option = [
-      PDO::ATTR_PERSISTENT => true, //menjaga koneksi tetap terjaga PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+      PDO::ATTR_PERSISTENT => true, //menjaga koneksi tetap terjaga 
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ];
     try {
       $this->dbh = new PDO($dsn, $this->user, $this->pass, $option);
@@ -46,16 +46,17 @@ class Database
     }
     $this->stmt->bindValue($param, $value, $type);
   }
-
   public function execute()
   {
     $this->stmt->execute();
   }
+
   public function resultAll()
   {
     $this->execute();
     return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+
   public function resultSingle()
   {
     $this->execute();

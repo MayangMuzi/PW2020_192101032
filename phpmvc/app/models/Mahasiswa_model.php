@@ -3,13 +3,12 @@ class Mahasiswa_model
 {
   private $table = 'mahasiswa';
   private $db;
-
   public function __construct()
   {
     $this->db = new Database;
   }
 
-  public function getAllMahasiswa() //method utk mendapatkan data mhs
+  public function getAllMahasiswa() //method utk mendapatkan data mhs 
   {
     $this->db->query("SELECT * FROM " . $this->table);
     return $this->db->resultAll();

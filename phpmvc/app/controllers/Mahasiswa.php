@@ -1,4 +1,5 @@
-<?php class Mahasiswa extends Controller
+<?php
+class Mahasiswa extends Controller
 {
   public function index()
   {
@@ -8,6 +9,7 @@
     $this->view('Mahasiswa/index', $data);
     $this->view('templates/footer');
   }
+
   public function detail($id)
   {
     $data['judul'] = 'Detail Mahasiswa';

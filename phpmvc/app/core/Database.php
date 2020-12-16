@@ -5,12 +5,11 @@ class Database
   private $user = DB_USER;
   private $pass = DB_PASS;
   private $db_name = DB_NAME;
-  private $dbh; //database handler 
+  private $dbh; //database handler
   private $stmt;
   public function __construct()
-
   {
-    //data source name 
+    //data source name
     $dsn = "mysql:host=" . $this->host . "; dbname=" . $this->db_name;
     //option utk mengoptimasi koneksi ke database
     $option = [
@@ -23,7 +22,6 @@ class Database
       die($e->getMessage());
     }
   }
-
   public function query($query)
   {
     $this->stmt = $this->dbh->prepare($query);
@@ -62,5 +60,9 @@ class Database
   {
     $this->execute();
     return $this->stmt->fetch(PDO::FETCH_ASSOC);
+  }
+  public function rowCount()
+  {
+    return $this->stmt->rowCount();
   }
 }

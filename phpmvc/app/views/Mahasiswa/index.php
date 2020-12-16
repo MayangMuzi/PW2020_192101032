@@ -17,7 +17,8 @@
             <li class="list-group-item list-group-item d-flex justify-content-between align-items-center">
               <?= $mhs['nama']; ?>
               <a href="<?= BASEURL; ?>/Mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary">detail</a>
-            </li> <?php endforeach; ?>
+            </li>
+          <?php endforeach; ?>
         </ul>
       </div>
     </div>
